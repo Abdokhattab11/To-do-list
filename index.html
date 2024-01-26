@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <script src="assets/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="active-tasks tasks">
+      <div class="active-tasks__cnt tasks__cnt">
+        <h2 class="active-tasks__title tasks__title">
+          <ion-icon name="time-outline" class="icon"></ion-icon>
+          <span>Active Tasks</span>
+        </h2>
+        <ul class="active-tasks__list tasksList">
+          <p class="default-text">Empty</p>
+        </ul>
+        <div class="add-task-cnt">
+          <form class="add-task-form">
+            <h3>Add a new Task</h3>
+            <div class="add-task-form-input-cnt">
+              <label for="task-text">Task Name</label>
+              <input type="text" id="task-name" />
+            </div>
+            <div class="add-task-form-input-cnt">
+              <label for="task-text">Task Tags</label>
+              <input type="text" id="task-tags" />
+            </div>
+          </form>
+          <button class="add-task-btn">Add Task</button>
+        </div>
+      </div>
+    </section>
+    <section class="completed-tasks tasks">
+      <div class="active-tasks__cnt tasks__cnt">
+        <h2 class="active-tasks__title tasks__title">
+          <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon>
+          <span>Completed Tasks</span>
+        </h2>
+        <ul class="completed-tasks__list tasksList">
+          <p class="default-text">Empty</p>
+        </ul>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
